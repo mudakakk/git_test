@@ -1,5 +1,22 @@
-const sumAll = function() {
+const sumAll = function(start, end) {
+    let sum = 0
+    switch (false) {
+        case (start > 0 && end > 0):
+            return 'ERROR'
+        case (Number.isInteger(start) && Number.isInteger(end)):
+            return 'ERROR'
+        default: 
+            break
+    }
 
+    if ((start - end) < 0) {
+    for (i = start; i <= end; i++) {
+        sum += i;
+    }} else {
+    for (i = end; i <= start; i++) {
+        sum += i;
+    }}
+    return sum;
 };
 
 // Do not edit below this line
